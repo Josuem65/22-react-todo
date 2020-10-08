@@ -5,29 +5,88 @@
   font-family: sans-serif
 }
 
-body {
+.container {
   background-color: rgb(244, 244, 244);
   width: 700px;
-  border: 1px solid;
-  margin: auto;
+  height: auto;
+  margin: 30px auto auto auto;
+  padding-bottom: 50px;
 }
 
-.mainHeader {
+.todoTitle {
   font-size: 80px;
   font-weight: lighter;
   color: rgb(227, 210, 213);
   text-align: center;
 }
 
-.mainInput {
-  margin-left: 25px;
+/* .form {
+  margin-bottom: 0;
+} */
+
+.input {
+  position: relative;
+  left: 50px;
   padding-left: 45px;
   height: 65px;
-  width: 650px;
-  font-size: 50px;
+  width: 600px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: rgb(106, 106, 106);
+  border: none;
+  border-right: 1px solid rgb(227, 227, 227);
+  border-left: 1px solid  rgb(227, 227, 227);
+  border-bottom: 2px solid  rgb(227, 227, 227);
+  outline: none;
 }
 
-.mainInput::placeholder {
+.input::placeholder {
   font-weight: lighter;
-  color: rgb(242, 242, 242);
+  color: rgb(240, 240, 240);
+  font-style: italic;
+}
+
+.listItem {
+  margin-top: 0;
+  position: relative;
+  left: 50px;
+  padding-left: 45px;
+  border: none;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  border-right: 1px solid rgb(227, 227, 227);
+  border-left: 1px solid rgb(227, 227, 227);
+  background-color: white;
+  height: 65px;
+  width: 600px;
+  color: rgb(106, 106, 106);
+  font-size: 28px;
+  font-weight: lighter;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.todoItems {
+  display: flex;
+  align-self: center;
+}
+
+.delete {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  border: none;
+  color: rgb(252, 195, 195);
+  align-self: center;
+  background-color: white;
+  font-size: 28px;
+}
+
+.delete:focus {
+  outline: 0;
+}
+
+.checkbox {
+  border-radius: 30;
 }
